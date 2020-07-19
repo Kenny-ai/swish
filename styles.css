@@ -1,0 +1,173 @@
+body {
+  background: url(img/food-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #000000; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+img {
+  width: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.rapi { 
+  font-size: 1.6rem;
+  color: #ff11e5;
+  position: relative;
+  bottom: 10px;
+}
+
+.contact {
+  position: fixed;
+  right: 30px;
+  font-size: 1.6rem;
+  color: #ff11e5;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ff11e5;
+}
+
+.contact a:hover {
+  color: #ffa700;
+}
+
+.form-container {
+  background: rgb(255, 167, 0);
+  width: 25%;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: inset -1px 1px 7px rgba(0,0,0,.2), 
+  inset 1px -1px 7px rgba(0,0,0,.2), 
+  1px 12px 5px rgba(0,0,0,.4), 
+  4px 3px 8px rgba(0,0,0,.4), 
+  5px 10px 10px rgba(0,0,0,.2), 
+  -5px 10px 10px rgba(0,0,0,.4);
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  
+}
+
+.number-prefix {
+  background: transparent;
+  width: 8%;
+  display: inline;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  border: transparent;
+  border-bottom: 1px solid black;
+}
+
+.number-field {
+  background: transparent;
+  width: 85%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: transparent;
+  border-bottom: 1px solid black;
+}
+
+.first-name-field, .last-name-field, select {
+  background: transparent;
+  width: 24rem;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.first-name-field, .last-name-field, .number-field, select:focus {
+  outline: none
+}
+
+.label {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
+}
+
+textarea {
+  background: transparent;
+  width: 24rem;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+::placeholder {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #FFA812;
+  position: relative;
+  left: 10rem;
+  width: 20%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px black;
+}
+
+@media (max-width: 1500px) {
+  body {
+    background: url(img/food-bg-1a.png);
+    background-size: cover;
+  }
+
+  .first-name-field, .last-name-field {
+    width: 96%;
+  }
+
+  .number-prefix {
+    width: 15%;
+  }
+
+  .number-field {
+    width: 75%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .label {
+    font-size: small;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    position: relative;
+    left: 5rem;
+    width: 30%;
+  }
+}

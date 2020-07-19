@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato|Roboto">
+  </head>
+  <body>    
+    <nav id="navBar" class="nav-bar">
+      <ul>
+        <li class="rapi"><span><img src="rapidaque _logo.png" alt=""> Rapidaque</li></span>
+        <li class="contact"><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+    <form action="">
+      <div id="formContainer" class="form-container">
+    
+        <label for="first-name" class="label">First Name</label><br>
+        <input type="text" name="first-name" id="nameField" class="first-name-field" placeholder="Enter your first name" required><br>
+          
+        <label for="last-name" class="label">Last Name</label><br>
+        <input type="text" name="last-name" id="nameField" class="last-name-field" placeholder="Enter your last name" required><br>
+        
+        <label id="numberLabel" for="phone-no" class="label">Phone Number</label><br>
+        <input type="tel" class="number-prefix" placeholder="+234" readonly>
+        <input id="numberField" class="number-field" name="phone-no" type="tel" placeholder="Phone No" required><br>
+
+        <label for="address" class="label">Address</label><br>
+        <textarea name="address" id="address" cols="20" rows="3" placeholder="Street name/House No." required></textarea><br>
+        
+        <label for="state" class="label">State</label><br>
+        <select name="state" id="state">
+          <option value="" disabled selected hidden>Select state</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Ogun">Ogun</option>
+          <option value="Oyo">Oyo</option>
+        </select><br>
+
+        <label for="city" class="label">City</label><br>
+        <select name="city" id="city">
+          <option value="" disbled selected>Select city</option>
+        </select><br>
+        
+        <input type="submit" id="submit" value="SUBMIT">
+      </div>
+    </form>
+    
+  </body>
+</html>
